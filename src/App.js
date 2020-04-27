@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import Player from './components/Player';
+import Player2 from './components/Player2';
+import * as $ from "jquery";
+
 
 export const authEndpoint = 'https://accounts.spotify.com/authorize?';
 // Replace with your app's client ID, redirect URI and desired scopes
@@ -18,7 +21,19 @@ const hash = window.location.hash.substring(1).split('&').reduce(function(initia
 window.location.hash = '';
 
 class App extends Component {
-	state = {};
+	state = {
+		token: null,
+		item: {
+			album: {
+				images: [{ url: "" }]
+			},
+			name: "",
+			artists: [{ name: "" }],
+			duration_ms: 0,
+		},
+		is_playing: "Paused",
+		progress_ms: 0
+	};
 
 	componentDidMount() {
 		// Set token
@@ -28,8 +43,29 @@ class App extends Component {
 			this.setState({
 				token: _token
 			});
+			this.getCurrentlyPlaying(_token)
 		}
+		
 	}
+
+  getCurrentlyPlaying= (token)=> {
+    // Make a call using the token
+    $.ajax({
+      url: "https://api.spotify.com/v1/me/player",
+      type: "GET",
+      beforeSend: (xhr) => {
+        xhr.setRequestHeader("Authorization", "Bearer " + token);
+      },
+      success: (data) => {
+        this.setState({
+          item: data.item,
+          is_playing: data.is_playing,
+          progress_ms: data.progress_ms,
+        });
+      }
+    });
+  }
+
 	render() {
 		return (
 			<div className="App">
@@ -43,8 +79,24 @@ class App extends Component {
 						>
 							Login to Spotify
 						</a>
-					)}
-					{this.state.token && <Player />}
+					)} 
+
+					{this.state.token && <Player2
+							item={this.state.item}
+							is_playing={this.state.is_playing}
+							progress_ms={this.progress_ms}
+							music={this.state.item.preview_url}
+						/>}
+
+
+					{/* // {this.state.token && <Player />}
+					// {this.state.token && (
+					// 	<Player2
+					// 		item={this.state.item}
+					// 		is_playing={this.state.is_playing}
+					// 		progress_ms={this.progress_ms}
+					// 	/>
+					// )} */}
 				</header>
 			</div>
 		);

@@ -1,4 +1,6 @@
+import React, { Component } from 'react'
 import * as $ from "jquery";
+import Player2 from './Player2'
 
 class Player extends Component {
   constructor() {
@@ -35,6 +37,10 @@ class Player extends Component {
       }
     });
   }
+
+    render() {
+        return <div />
+    }
 }
 
 export default Player
