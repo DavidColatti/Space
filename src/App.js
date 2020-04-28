@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Player from './components/Player';
 import * as $ from 'jquery';
-import axios from 'axios';
+import scenes from './API/ScenesAPI.json';
 
 export const authEndpoint = 'https://accounts.spotify.com/authorize?';
 // Replace with your app's client ID, redirect URI and desired scopes
@@ -32,7 +32,8 @@ class App extends Component {
 		},
 		is_playing: 'Paused',
 		progress_ms: 0,
-		track: '',
+		track: [],
+		dataReady: false
 	};
 
 	componentDidMount() {
@@ -43,49 +44,46 @@ class App extends Component {
 			this.setState({
 				token: _token
 			});
-			this.getPlaylist(_token)
+			this.getPlaylist(_token);
 		}
 	}
 
-	// getCurrentlyPlaying = (token) => {
-	// 	// Make a call using the token
-	// 	$.ajax({
-	// 		url: 'https://api.spotify.com/v1/me/player',
-	// 		type: 'GET',
-	// 		beforeSend: (xhr) => {
-	// 			xhr.setRequestHeader('Authorization', 'Bearer ' + token);
-	// 		},
-	// 		success: (data) => {
-	// 			this.setState({
-	// 				item: data.item,
-	// 				is_playing: data.is_playing,
-	// 				progress_ms: data.progress_ms
-	// 			});
-	// 		}
-	// 	});
-	// };
-
 	getPlaylist = (token) => {
-		// let playlistID = '37i9dQZF1DWZqd5JICZI0u'
+		let playlistID = '37i9dQZF1DWZqd5JICZI0u';
+		let urlLink = 'https://api.spotify.com/v1/playlists/' + playlistID + '/tracks';
+
 		$.ajax({
-			url: 'https://api.spotify.com/v1/playlists/37i9dQZF1DWZqd5JICZI0u/tracks',
+			url: urlLink,
 			type: 'GET',
 			beforeSend: (xhr) => {
 				xhr.setRequestHeader('Authorization', 'Bearer ' + token);
 			},
 			success: (data) => {
-				console.log(data.items)
+				console.log(data.items);
 				this.setState({
-					track: data.items
-				})
+					track: data.items,
+					dataReady: true
+				});
 			}
-		})
+		});
+	};
+
+	displayScene = () => {
+		return (
+			<div>
+				<video width="320" height="240" autoPlay loop>
+					<source src={scenes.scenes[0].video.url} type="video/mp4" />
+				</video>
+			</div>
+		);
 	};
 
 	render() {
 		return (
 			<div className="App">
 				<header className="App-header">
+					{this.displayScene()}
+
 					{!this.state.token && (
 						<a
 							className="btn btn--loginApp-link"
@@ -103,6 +101,8 @@ class App extends Component {
 							is_playing={this.state.is_playing}
 							progress_ms={this.progress_ms}
 							music={this.state.item.preview_url}
+							track={this.state.track}
+							dataReady={this.state.dataReady}
 						/>
 					)}
 				</header>
