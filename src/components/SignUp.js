@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Player from './Player';
 import * as $ from 'jquery';
-import ScenesImage from './ScenesImage';
 
 export const authEndpoint = 'https://accounts.spotify.com/authorize?';
 // Replace with your app's client ID, redirect URI and desired scopes
@@ -73,6 +72,7 @@ class SignUp extends Component {
 				<header>
 					{!this.state.token && (
 						<a
+							target="_blank"
 							href={`${authEndpoint}client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
 								'%20'
 							)}&response_type=token&show_dialog=true`}
@@ -81,7 +81,7 @@ class SignUp extends Component {
 						</a>
 					)}
 
-					{this.state.token && (
+					{/* {this.state.token && (
 						<Player
 							item={this.state.item}
 							is_playing={this.state.is_playing}
@@ -90,7 +90,7 @@ class SignUp extends Component {
 							track={this.state.track}
 							dataReady={this.state.dataReady}
 						/>
-					)}
+					)} */}
 				</header>
 			</div>
 		);
