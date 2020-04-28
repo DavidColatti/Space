@@ -92,7 +92,7 @@ class SignUp extends Component {
 						/>
 					)} */}
 
-					{this.state.token ? <LoggedIn /> : ''}
+					{this.state.token ? <LoggedIn track={this.state.track} /> : ''}
 				</header>
 			</div>
 		);

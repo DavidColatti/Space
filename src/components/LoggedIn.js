@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
+import ScenesImage from './ScenesImage';
 
 class LoggedIn extends Component {
 	state = {
@@ -38,7 +39,7 @@ class LoggedIn extends Component {
 		if (this.state.displayHome) {
 			return <div>DISPLAYING HOME</div>;
 		} else if (this.state.displayScenes) {
-			return <div>DISPLAYING SCENES</div>;
+			return <ScenesImage />;
 		} else if (this.state.displayMeditate) {
 			return <div>DISPLAYING MEDITATE</div>;
 		} else if (this.state.displaySleep) {

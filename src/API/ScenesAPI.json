@@ -1,5 +1,4 @@
-{
-  "scenes": [
+[
     {
       "offsets": {
         "x": 0.5,
@@ -1824,18 +1823,4 @@
       },
       "track_name": "A Shower of Blessings"
     }
-  ],
-  "static_scenes": [
-    {
-      "id": "Ekeccg5Wsb",
-      "title": "Daily Scene",
-      "images": [
-        {
-          "id": "G63qMRQN9",
-          "start_time": "2017-01-14T00:00:00.000Z",
-          "url": "http://cdn.calm.com/images/static_scenes/Ekeccg5Wsb/G63qMRQN9.jpg?v=1479653867691"
-        }
-      ]
-    }
   ]
-}
