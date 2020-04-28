@@ -8,7 +8,8 @@ class Home extends Component {
 			<div className="Home">
 				<div>
 					<nav>
-						<h1>Space</h1>
+						{/* <img src="../Images/textlogo.png" alt="text logo" /> */}
+						<h1>SPACE</h1>
 					</nav>
 				</div>
 				<div>
