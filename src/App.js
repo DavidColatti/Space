@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Player from './components/Player';
-import Player2 from './components/Player2';
-import * as $ from "jquery";
-
+import * as $ from 'jquery';
+import axios from 'axios';
 
 export const authEndpoint = 'https://accounts.spotify.com/authorize?';
 // Replace with your app's client ID, redirect URI and desired scopes
@@ -25,14 +24,15 @@ class App extends Component {
 		token: null,
 		item: {
 			album: {
-				images: [{ url: "" }]
+				images: [ { url: '' } ]
 			},
-			name: "",
-			artists: [{ name: "" }],
-			duration_ms: 0,
+			name: '',
+			artists: [ { name: '' } ],
+			duration_ms: 0
 		},
-		is_playing: "Paused",
-		progress_ms: 0
+		is_playing: 'Paused',
+		progress_ms: 0,
+		track: '',
 	};
 
 	componentDidMount() {
@@ -43,28 +43,44 @@ class App extends Component {
 			this.setState({
 				token: _token
 			});
-			this.getCurrentlyPlaying(_token)
+			this.getPlaylist(_token)
 		}
-		
 	}
 
-  getCurrentlyPlaying= (token)=> {
-    // Make a call using the token
-    $.ajax({
-      url: "https://api.spotify.com/v1/me/player",
-      type: "GET",
-      beforeSend: (xhr) => {
-        xhr.setRequestHeader("Authorization", "Bearer " + token);
-      },
-      success: (data) => {
-        this.setState({
-          item: data.item,
-          is_playing: data.is_playing,
-          progress_ms: data.progress_ms,
-        });
-      }
-    });
-  }
+	// getCurrentlyPlaying = (token) => {
+	// 	// Make a call using the token
+	// 	$.ajax({
+	// 		url: 'https://api.spotify.com/v1/me/player',
+	// 		type: 'GET',
+	// 		beforeSend: (xhr) => {
+	// 			xhr.setRequestHeader('Authorization', 'Bearer ' + token);
+	// 		},
+	// 		success: (data) => {
+	// 			this.setState({
+	// 				item: data.item,
+	// 				is_playing: data.is_playing,
+	// 				progress_ms: data.progress_ms
+	// 			});
+	// 		}
+	// 	});
+	// };
+
+	getPlaylist = (token) => {
+		// let playlistID = '37i9dQZF1DWZqd5JICZI0u'
+		$.ajax({
+			url: 'https://api.spotify.com/v1/playlists/37i9dQZF1DWZqd5JICZI0u/tracks',
+			type: 'GET',
+			beforeSend: (xhr) => {
+				xhr.setRequestHeader('Authorization', 'Bearer ' + token);
+			},
+			success: (data) => {
+				console.log(data.items)
+				this.setState({
+					track: data.items
+				})
+			}
+		})
+	};
 
 	render() {
 		return (
@@ -79,24 +95,16 @@ class App extends Component {
 						>
 							Login to Spotify
 						</a>
-					)} 
+					)}
 
-					{this.state.token && <Player2
+					{this.state.token && (
+						<Player
 							item={this.state.item}
 							is_playing={this.state.is_playing}
 							progress_ms={this.progress_ms}
 							music={this.state.item.preview_url}
-						/>}
-
-
-					{/* // {this.state.token && <Player />}
-					// {this.state.token && (
-					// 	<Player2
-					// 		item={this.state.item}
-					// 		is_playing={this.state.is_playing}
-					// 		progress_ms={this.progress_ms}
-					// 	/>
-					// )} */}
+						/>
+					)}
 				</header>
 			</div>
 		);
