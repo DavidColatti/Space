@@ -4,11 +4,16 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
+<<<<<<< HEAD
 import '@fortawesome/fontawesome-free/css/all.min.css'; import
 'bootstrap-css-only/css/bootstrap.min.css'; import
 'mdbreact/dist/css/mdb.css';
 import './index.css';
 import './components/Home.css';
+=======
+import './components/MeditateDetails.css';
+import './components/MeditateList.css';
+>>>>>>> 9062cfd2800599793b360ebbdb2e6ff13820fdf2
 
 ReactDOM.render(
 	<BrowserRouter>

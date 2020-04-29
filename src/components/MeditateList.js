@@ -4,6 +4,11 @@ import meditate from "../API/MeditateAPI.json";
 import "./MeditateList.css";
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import Card from './Card'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import meditate from '../API/MeditateAPI.json';
+import './MeditateList.css';
+
 class MeditateList extends Component {
   state = {
     programs: meditate.meditate.programs,
