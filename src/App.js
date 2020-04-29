@@ -8,6 +8,9 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
+			<video autoPlay loop id="videobackground" contols="false">
+					<source src="meadow.mp4" type="video/mp4" />
+				</video>
 				<Switch>
 					<Route exact path="/" render={(props) => <Home {...props} />} />
 					<Route exact path="/Meditate" render={(props) => <LoggedIn {...props} />} />
