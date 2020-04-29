@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import meditate from '../API/MeditateAPI.json';
+import './MeditateDetails.css';
 
 class MeditateDetails extends Component {
 	state = {
@@ -24,13 +25,58 @@ class MeditateDetails extends Component {
 		});
 	}
 
+	getNarrators = () => {
+		let narrators = this.state.program.narrators;
+		console.log(narrators);
+
+		return narrators.map((each) => {
+			return (
+				<div>
+					<div>
+						<img width="100px" src={each.headshot.url} />
+						<h3>{each.name}</h3>
+						<h3>{each.display_title}</h3>
+					</div>
+					<div>
+						<h4>{each.short_bio}</h4>
+						<h6>{each.bio}</h6>
+					</div>
+				</div>
+			);
+		});
+	};
+
+	getGuides = () => {
+		let guides = this.state.program.guides;
+		console.log(guides);
+
+		return guides.map((each) => {
+			return (
+				<div>
+					<h4>{each.title}</h4>
+					<audio controls src={each.audio.url} />
+				</div>
+			);
+		});
+	};
+
 	displayDetails = () => {
 		let program = this.state.program;
-		console.log(program);
+
+		return (
+			<div>
+				<div className="title">
+					<h1>{program.title}</h1>
+					<h2>{program.description}</h2>
+				</div>
+				<div className="narrators">{this.getNarrators()}</div>
+				<div className="guides">{this.getGuides()}</div>
+			</div>
+		);
 	};
 
 	render() {
-		return <div>{this.displayDetails()}</div>;
+		return <div>{this.state.program ? this.displayDetails() : ''}</div>;
 	}
 }
 
