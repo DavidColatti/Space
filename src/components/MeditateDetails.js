@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import meditate from '../API/MeditateAPI.json';
-import './MeditateDetails.css';
 
 class MeditateDetails extends Component {
 	state = {
