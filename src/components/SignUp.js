@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Player from './Player';
 import * as $ from 'jquery';
 // import ScenesImage from './ScenesImage';
+import LoggedIn from './LoggedIn';
 
 export const authEndpoint = 'https://accounts.spotify.com/authorize?';
 // Replace with your app's client ID, redirect URI and desired scopes
@@ -81,7 +82,7 @@ class SignUp extends Component {
 						</a>
 					)}
 
-					{this.state.token && (
+					{/* {this.state.token && (
 						<Player
 							item={this.state.item}
 							is_playing={this.state.is_playing}
@@ -90,7 +91,9 @@ class SignUp extends Component {
 							track={this.state.track}
 							dataReady={this.state.dataReady}
 						/>
-					)}
+					)} */}
+
+					{this.state.token ? <LoggedIn track={this.state.track} /> : ''}
 				</header>
 			</div>
 		);
