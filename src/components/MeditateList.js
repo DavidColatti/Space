@@ -8,8 +8,10 @@ class MeditateList extends Component {
 		programs: meditate.meditate.programs
 	};
 
+	
 	displayList = () => {
-		let programsCopy = [ ...this.state.programs ];
+		this.state.programs.splice(59,1)
+		let programsCopy = [ ...this.state.programs ]
 
 		return programsCopy.map((each) => {
 			return (
@@ -22,7 +24,7 @@ class MeditateList extends Component {
 						{each.title}
 					</Link>
 					<div className="icon">
-						<img src={each.icon.url} alt="icon" />
+						<img width="100px" src={each.background_image?.url} alt="icon" />
 					</div>
 				</div>
 			);
