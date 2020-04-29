@@ -4,12 +4,102 @@
 	height: 100%;
 	overflow: hidden;
 	color: white;
+	align-items: center;
+	
 }
 
+/* OVERLAY */
+
+.header-overlay{
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: slategrey;
+	z-index: 1;
+	opacity: 0.4;
+	
+}
+
+/* TEXT IN BODY */
+
 a {
-	color: white;
+	/* color: white; */
+	color: #333;
+}
+
+.header-body {
+	color: whitesmoke;
+	margin-bottom: 0;
+}
+
+.header.title {
+	/* z-index: 2; */
+	font-size: 50px;
+	margin-bottom: 0;
+	text-align: left;
+	margin-top: 0;
+}
+
+.UpperHeader {
+	text-align: left;
+	margin-left: 140px;
+	margin-top: 250px;
+}
+
+.LowerHeader {
+	text-align: left;
+	margin-left: 0px;
+	margin-top:0px;
 }
 
 body {
 	background-color: black;
+	font-family: Zapf Chancery, cursive;;
+	font-size: 1rem;
+	line-height: 1.5;
+	overflow: hidden;
+}
+
+/* BACKGROUND */
+
+#videobackground {
+	height: 100vh;
+	width: 100vw;
+	float: left;
+	top: 0;
+	position: fixed;
+	z-index: -1;
+}
+
+video {
+	object-fit: cover;
+}
+
+/* BUTTON */
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 64px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }

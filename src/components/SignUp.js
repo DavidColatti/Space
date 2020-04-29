@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Player from './Player';
 import * as $ from 'jquery';
-import ScenesImage from './ScenesImage';
+// import ScenesImage from './ScenesImage';
 
 export const authEndpoint = 'https://accounts.spotify.com/authorize?';
 // Replace with your app's client ID, redirect URI and desired scopes
