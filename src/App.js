@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import Home from './components/Home';
-import { Route, Switch, Link } from 'react-router-dom';
-import LoggedIn from './components/LoggedIn';
+import { Route, Switch } from 'react-router-dom';
+import Meditate from './components/Meditate';
+import MeditateDetails from './components/MeditateDetails';
 
 class App extends Component {
 	render() {
@@ -13,7 +14,8 @@ class App extends Component {
 				</video>
 				<Switch>
 					<Route exact path="/" render={(props) => <Home {...props} />} />
-					<Route exact path="/Meditate" render={(props) => <LoggedIn {...props} />} />
+					<Route exact path="/Meditate" render={(props) => <Meditate {...props} />} />
+					<Route exact path="/Meditate/:id" render={(props) => <MeditateDetails {...props} />} />
 				</Switch>
 			</div>
 		);
