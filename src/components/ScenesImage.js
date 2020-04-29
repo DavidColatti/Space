@@ -29,13 +29,7 @@ class ScenesImage extends Component {
 	};
 
 	render() {
-		console.log(scenes);
-		return (
-			<div>
-				<button>More Scenes</button>
-				{this.displayScene()}
-			</div>
-		);
+		return <div>{this.displayScene()}</div>;
 	}
 }
 
