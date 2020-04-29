@@ -7,7 +7,9 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<Home />
+				<Switch>
+					<Route exact path="/" render={(props) => <Home {...props} />} />
+				</Switch>
 			</div>
 		);
 	}
