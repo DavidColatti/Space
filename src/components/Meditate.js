@@ -5,13 +5,9 @@ class Meditate extends Component {
 	render() {
 		return (
 			<div className="Meditate">
-				<div className="row">
-					<div className="col-5" style={{ maxHeight: '100vh', overflow: 'scroll' }}>
-						<div className="list-group">
+				
 							<MeditateList />
-						</div>
-					</div>
-				</div>
+	
 			</div>
 		);
 	}
