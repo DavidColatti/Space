@@ -1,3 +1,32 @@
 a {
 	color: white;
+
 }
+
+.meditateList {
+	display: flex;
+	flex-wrap: wrap;
+}
+.meditateElement {
+	width: 20%;
+
+}
+
+@media screen and (max-width: 815px) {
+	.meditateElement {
+		width:25%;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.meditateElement {
+		width:33%;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.meditateElement {
+		width: 50%;
+	}
+}
+

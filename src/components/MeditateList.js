@@ -13,7 +13,7 @@ class MeditateList extends Component {
 
 		return programsCopy.map((each) => {
 			return (
-				<div>
+				<div className="meditateElement">
 					<Link
 						key={each.id}
 						className="list-group-item list-group-item-action active"
@@ -31,7 +31,7 @@ class MeditateList extends Component {
 
 	render() {
 		console.log(this.state.programs);
-		return <div>{this.displayList()}</div>;
+		return <div className="meditateList">{this.displayList()}</div>;
 	}
 }
 
