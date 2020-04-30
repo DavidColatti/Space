@@ -123,11 +123,9 @@ video {
 *{
 	transition:all .7s;
 	font-size: x-small;
-	opacity: .5px;
-	
 }
 
 .card title {
-	opacity: .5px;
 
+	opacity: .5px;
 }
