@@ -39,16 +39,20 @@ a {
 	text-align: left;
 	margin-top: 0;
 }
+.header-text {
+	margin-left: 1.5%;
+}
 
 .UpperHeader {
 	text-align: left;
 	margin-left: 140px;
 	margin-top: 250px;
+
 }
 
 .LowerHeader {
 	text-align: left;
-	margin-left: 0px;
+	margin-left: 10px;
 	margin-top: 0px;
 }
 
@@ -59,6 +63,7 @@ body {
 	line-height: 1.5;
 	overflow: scroll;
 	padding: 0;
+	
 }
 
 /* BACKGROUND */

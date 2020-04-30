@@ -3,9 +3,8 @@ import { Route, Link } from 'react-router-dom';
 import meditate from '../API/MeditateAPI.json';
 import './MeditateList.css';
 import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
-
-// CARD
 import Card from './Card';
+// import NavBar from './NavBar';
 
 class MeditateList extends Component {
 	state = {
@@ -66,8 +65,11 @@ class MeditateList extends Component {
 	render() {
 		console.log(this.state.programs);
 		return (
-			<div className="meditateList">
-				<MDBContainer>{this.displayList()}</MDBContainer>
+			<div>
+				{/* <NavBar /> */}
+				<div className="meditateList">
+					<MDBContainer>{this.displayList()}</MDBContainer>
+				</div>
 			</div>
 		);
 	}
