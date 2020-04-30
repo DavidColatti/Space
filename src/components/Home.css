@@ -97,7 +97,8 @@ video {
 	font-weight: bold;
 	padding: 6px 64px;
 	text-decoration: none;
-	text-shadow: 0px 1px 0px #ffffff;
+	text-shadow: 0px 3px 0px #ffffff;
+	opacity: 50%;
 }
 .myButton:hover {
 	background: linear-gradient(to bottom, #dfdfdf 15%, #ededed 100%);
