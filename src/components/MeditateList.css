@@ -2,6 +2,8 @@
 	height: 100vh;
 	width: 100%;
 	overflow: scroll;
+	transition: all .7s;
+	font-size: xx-small;
 }
 
 a {
@@ -51,7 +53,7 @@ img {
 
 .card-title {
 	font-size: 14px;
-	color:whitesmoke;
+	color: whitesmoke;
 }
 
 .view {
@@ -65,4 +67,22 @@ img {
 
 .card {
 	background-color: black;
+}
+
+/* CARD */
+
+.card {
+	border-radius: 5% !important;
+	width: 20vw !important;
+	margin-bottom: 10%;
+	margin-right: 10%;
+	background: rgba(0, 0, 0, .3);
+}
+
+.card img {
+	transform: scale(1.2);
+}
+
+.card:hover img {
+	transform: scale(1.5) !important;
 }
