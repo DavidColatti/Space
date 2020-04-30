@@ -8,8 +8,6 @@ const Card = (props) => {
         <MDBCardImage className="img-fluid" src={props.background_image?.url} />
         <MDBCardBody>
           <MDBCardTitle>{props.title}</MDBCardTitle>
-          {/* <MDBCardText></MDBCardText> */}
-        
         </MDBCardBody>
       </MDBCard>
     </MDBCol>

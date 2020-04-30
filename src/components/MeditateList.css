@@ -1,34 +1,35 @@
-a {
-	color: white;
-
+.MeditateList {
+	height: 100vh;
+	width: 100%;
+	overflow: scroll;
 }
 
-img{
+a {
+	color: white;
+}
+
+img {
 	border-radius: 10%;
-	
 }
 .meditateList {
 	display: flex;
 	flex-wrap: wrap;
 	border-radius: 50%;
-
 }
 
 .meditateElement {
 	width: 20%;
-	
-
 }
 
 @media screen and (max-width: 815px) {
 	.meditateElement {
-		width:25%;
+		width: 25%;
 	}
 }
 
 @media screen and (max-width: 720px) {
 	.meditateElement {
-		width:33%;
+		width: 33%;
 	}
 }
 
@@ -38,11 +39,10 @@ img{
 	}
 }
 
-
 .col-md-4 {
 	padding: 1rem;
 	background-color: #33b5e5;
 	border: 2px solid #fff;
 	color: #fff;
 	text-align: center;
-	}
+}
