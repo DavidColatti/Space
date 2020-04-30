@@ -3,11 +3,10 @@ import { Route, Link } from "react-router-dom";
 import meditate from "../API/MeditateAPI.json";
 import "./MeditateList.css";
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
+
+// CARD
 import Card from './Card'
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import meditate from '../API/MeditateAPI.json';
-import './MeditateList.css';
+
 
 class MeditateList extends Component {
   state = {
@@ -56,10 +55,7 @@ class MeditateList extends Component {
 	}
 	console.log(rows)
 	return rows
-	
-	// let rows = columns.map((eachColum, i) => {
-	// 	let row = []
-	// })
+
   };
 
   render() {
