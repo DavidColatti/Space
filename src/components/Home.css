@@ -58,6 +58,7 @@ body {
 	font-size: 1rem;
 	line-height: 1.5;
 	overflow: scroll;
+	padding: 0;
 }
 
 /* BACKGROUND */
@@ -109,6 +110,7 @@ video {
 	width:20vw !important;
 	margin-bottom: 10%;
 	margin-right: 10%;
+	
 }
 
 .card img{
@@ -124,6 +126,7 @@ video {
 *{
 	transition:all .7s;
 	font-size: xx-small;
+	
 }
 
 .card title {
