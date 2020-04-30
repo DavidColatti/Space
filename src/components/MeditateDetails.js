@@ -25,7 +25,7 @@ class MeditateDetails extends Component {
 	}
 
 	getNarrators = () => {
-		let narrators = this.state.program.narrators;
+		let narrators = this.state.program.narrators.splice(0, 1);
 		console.log(narrators);
 
 		return narrators.map((each) => {

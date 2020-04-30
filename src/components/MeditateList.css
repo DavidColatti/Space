@@ -39,10 +39,25 @@ img {
 	}
 }
 
-.col-md-4 {
-	padding: 1rem;
-	background-color: #33b5e5;
-	border: 2px solid #fff;
-	color: black;
-	text-align: center;
+.card-body {
+	width: 160px;
+	height: 50.5px;
+}
+
+.img-fluid {
+	width: 100% !important;
+	height: 192px !important;
+}
+
+.card-title {
+	font-size: 14px;
+}
+
+.view {
+	border-top: 0px;
+	position: relative;
+	overflow: hidden;
+	cursor: default;
+	border-top-left-radius: 5% !important;
+	border-top-right-radius: 5% !important;
 }
