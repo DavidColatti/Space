@@ -67,9 +67,13 @@ class MeditateList extends Component {
 		return (
 			<div>
 				{/* <NavBar /> */}
-				<div className="meditateList">
-					<MDBContainer>{this.displayList()}</MDBContainer>
-				</div>
+				{this.state.programs ? (
+					<div className="meditateList">
+						<MDBContainer>{this.displayList()}</MDBContainer>
+					</div>
+				) : (
+					<h1>LOADING</h1>
+				)}
 			</div>
 		);
 	}
