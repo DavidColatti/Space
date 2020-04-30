@@ -106,13 +106,13 @@ video {
 
 .card {
 	border-radius: 5% !important;
-	border: 1px solid red;
 	width:20vw !important;
+	margin-bottom: 10%;
 }
 
 .card img{
 	transform:scale(1.2);
-	opacity: .5px;
+	
 }
 
 .card:hover img{
@@ -122,4 +122,11 @@ video {
 *{
 	transition:all .7s;
 	font-size: x-small;
+	opacity: .5px;
+	
+}
+
+.card title {
+	opacity: .5px;
+
 }

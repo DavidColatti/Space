@@ -9,7 +9,7 @@ const Card = (props) => {
         <MDBCardBody>
           <MDBCardTitle>{props.title}</MDBCardTitle>
           {/* <MDBCardText></MDBCardText> */}
-          <MDBBtn href="#">Click</MDBBtn>
+        
         </MDBCardBody>
       </MDBCard>
     </MDBCol>
