@@ -68,7 +68,8 @@ class MeditateList extends Component {
 			<div>
 				{/* <NavBar /> */}
 				<div className="meditateList">
-					<MDBContainer>{this.displayList()}</MDBContainer>
+          <MDBContainer fluid=
+          'true'>{this.displayList()}</MDBContainer>
 				</div>
 			</div>
 		);

@@ -11,17 +11,17 @@ a {
 img {
 	border-radius: 10%;
 }
-.meditateList {
+/* .meditateList {
 	display: flex;
 	flex-wrap: wrap;
 	border-radius: 50%;
-}
+} */
 
-.meditateElement {
+/* .meditateElement {
 	width: 20%;
-}
+} */
 
-@media screen and (max-width: 815px) {
+/* @media screen and (max-width: 815px) {
 	.meditateElement {
 		width: 25%;
 	}
@@ -37,7 +37,17 @@ img {
 	.meditateElement {
 		width: 50%;
 	}
+} */
+.card {
+	width: 100vw;
+	max-width: 200px;
 }
+
+@media (min-width: 767.98px) { 
+	.card {
+		width: 100vw;
+	}
+ }
 
 .card-body {
 	width: 160px;
