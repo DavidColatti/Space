@@ -116,7 +116,7 @@ video {
 	width:20vw !important;
 	margin-bottom: 10%;
 	margin-right: 10%;
-	
+	background: rgba(0, 0, 0, .3);
 }
 
 .card img{
@@ -136,6 +136,6 @@ video {
 }
 
 .card title {
-	color: black;
-	
+	color: whitesmoke;
 }
+
