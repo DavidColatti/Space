@@ -118,14 +118,15 @@ video {
 
 .card:hover img{
 	transform:scale(1.5) !important;
+	
 }
 
 *{
 	transition:all .7s;
-	font-size: x-small;
+	font-size: xx-small;
 }
 
 .card title {
-
-	opacity: .5px;
+	color: black;
+	
 }
