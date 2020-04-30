@@ -5,7 +5,7 @@
 }
 
 a {
-	color: rgb(0, 0, 0);
+	color: black;
 }
 
 img {
@@ -43,6 +43,6 @@ img {
 	padding: 1rem;
 	background-color: #33b5e5;
 	border: 2px solid #fff;
-	color: rgb(0, 0, 0);
+	color: black;
 	text-align: center;
 }
