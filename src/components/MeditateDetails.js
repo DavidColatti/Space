@@ -86,7 +86,7 @@ class MeditateDetails extends Component {
   };
 
   render() {
-    return <div>{this.state.program ? this.displayDetails() : ""} </div>;
+    return <div className="background"> {this.state.program ? this.displayDetails() : ""} </div>;
   }
 }
 
