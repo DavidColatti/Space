@@ -52,6 +52,7 @@ class MeditateDetails extends Component {
 		return guides.map((each) => {
 			return (
 				<div>
+				<i className="far fa-circle fa-10x"></i>
 					<h4>{each.title}</h4>
 					<audio controls src={each.audio.url} />
 				</div>
