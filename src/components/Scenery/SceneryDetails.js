@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import scenes from '../../API/ScenesAPI.json';
+import NavBar from '../NavBar';
 
 class SceneryDetails extends Component {
 	state = {
@@ -29,6 +30,7 @@ class SceneryDetails extends Component {
 
 		return (
 			<div>
+				<NavBar />
 				<h1>{scene.title}</h1>
 				<video autoPlay loop contols="false" width="800px">
 					<source src={scene.video.url} type="video/mp4" />
