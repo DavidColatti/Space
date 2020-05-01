@@ -5,7 +5,8 @@ import Meditate from './components/Meditate';
 import MeditateDetails from './components/MeditateDetails';
 import SceneryList from './components/Scenery/SceneryList';
 import SceneryDetails from './components/Scenery/SceneryDetails';
-import Music from './components/Music/Music';
+import Videos from './components/Videos/Videos';
+import VideoDetails from './components/Videos/VideoDetails';
 
 class App extends Component {
 	render() {
@@ -20,7 +21,8 @@ class App extends Component {
 					<Route exact path="/Meditate/:id" render={(props) => <MeditateDetails {...props} />} />
 					<Route exact path="/Scenery/" render={(props) => <SceneryList {...props} />} />
 					<Route exact path="/Scene/:id" render={(props) => <SceneryDetails {...props} />} />
-					<Route exact path="/Music/" render={(props) => <Music {...props} />} />
+					<Route exact path="/Videos/" render={(props) => <Videos {...props} />} />
+					<Route exact path="/Videos/:id" render={(props) => <VideoDetails {...props} />} />
 				</Switch>
 			</div>
 		);
