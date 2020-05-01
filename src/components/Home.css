@@ -119,7 +119,7 @@ video {
     border-radius: 5% !important;
     margin-bottom: 10%;
     margin-right: 10%;
-    background: rgba(0, 0, 0, .3);
+	background: rgba(0, 0, 0, .3);
 }
 
 .card img {

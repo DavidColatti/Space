@@ -1,42 +1,82 @@
+/******* DISPLAY DETAILS *******/
+/* DIV FOR DOSPLAY DETAIL PROGRAM, TITLE, NARRATORS, GUIDES */
 
-
-
-body {
-	color: rgb(0, 0, 0);
-	height: 100vh;
-	overflow: scroll;
-}
-
-
-audio {
-	opacity: .5;
-    filter: invert(1);
-    border-radius: 0;
-    font-size: 45px;
-    transform: scale(1.5);
-	padding: 0 !important;
-	clip: rect(0px,60px,200px,0px);
-	overflow: hidden;
-}
-
-.program {
+/* PROGRAM */
+ .program {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}  
+
+.program-title {
+	color: whitesmoke;
+	
 }
 
-/* NARRATOR NAME AND IMAGE  */
+/******* GET NARRATOR *******/
 /* DIV FOR HEADSHOT, EACH TITLE, AND EACH NAME */
 
-.img-name-title {
+/* NARRATOR NAME AND IMAGE  */
+.narrator-img-name-title {
 	font-size: 35px;
 	color: whitesmoke;
+	/* flex-direction: column;  ******** figure out why this won't center */
+	
 }
 
 .headshot{
 	width:200px;
 }
 
-.eachName {
+.narrator-name {
 	font-style: italic;
 }
+
+.narrator-bio {
+	text-align: center;
+}
+
+.narrator-short-bio {
+	text-align: center;
+}
+
+/* NARRATOR BIO, SHORT BIO AND BIO */
+.bio {
+	border: 1px;
+	width: 40% ;
+	text-align: center;
+	margin-left: 20px;
+
+}
+
+
+.narrator {
+	display:flex;
+	justify-content: center;
+}
+
+/******* GET GUIDES *******/
+
+/* GUIDE TITLE, ABOVE AUDIO */
+.guide-title {
+	color: whitesmoke;
+}
+
+/* AUDIO CONTROLS */
+audio {
+	opacity: .5;
+	color:  rgba(0, 0, 0, .3);
+	filter: invert(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
