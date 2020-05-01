@@ -1,0 +1,27 @@
+.NavBar {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	margin-bottom: 1%;
+	background: rgba(0, 0, 0, .3);
+}
+
+.nav-list {
+	list-style-type: none;
+	display: flex;
+	margin-top: 1%;
+	margin-right: 6%;
+}
+
+.nav-list li {
+	margin-right: 10%;
+}
+
+.nav-list a {
+	color: whitesmoke;
+	font-size: 14px;
+}
+
+.nav-list a:hover {
+	color: rgb(191, 191, 191);
+}

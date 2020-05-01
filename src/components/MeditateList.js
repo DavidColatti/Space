@@ -4,7 +4,7 @@ import meditate from '../API/MeditateAPI.json';
 import './MeditateList.css';
 import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
 import Card from './Card';
-// import NavBar from './NavBar';
+import NavBar from './NavBar';
 
 class MeditateList extends Component {
 	state = {
@@ -66,10 +66,9 @@ class MeditateList extends Component {
 		console.log(this.state.programs);
 		return (
 			<div>
-				{/* <NavBar /> */}
+				<NavBar />
 				<div className="meditateList">
-          <MDBContainer fluid=
-          'true'>{this.displayList()}</MDBContainer>
+					<MDBContainer fluid="true">{this.displayList()}</MDBContainer>
 				</div>
 			</div>
 		);
