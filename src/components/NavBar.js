@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import spacename from '../Images/spacename.png';
 
 class NavBar extends Component {
 	render() {
 		return (
 			<div className="NavBar">
-				<img src="../Images/spacename.png" alt="space name" className="nav-img" />
+				<img src={spacename} alt="space name" className="nav-img" />
 				<ul className="nav-list">
 					<li>
 						<Link to="/">Home</Link>
