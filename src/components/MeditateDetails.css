@@ -20,8 +20,23 @@ audio {
 }
 
 .program {
-/* justify-content: center; */
-display: flex;
-flex-direction: column;
-align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* NARRATOR NAME AND IMAGE  */
+/* DIV FOR HEADSHOT, EACH TITLE, AND EACH NAME */
+
+.img-name-title {
+	font-size: 35px;
+	color: whitesmoke;
+}
+
+.headshot{
+	width:200px;
+}
+
+.eachName {
+	font-style: italic;
 }
