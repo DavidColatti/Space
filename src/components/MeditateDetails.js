@@ -84,7 +84,7 @@ class MeditateDetails extends Component {
 		return (
 			<div>
 				<NavBar />
-				<div>{this.state.program ? this.displayDetails() : ''}</div>
+				<div className="background">{this.state.program ? this.displayDetails() : ''}</div>
 			</div>
 		);
 	}
