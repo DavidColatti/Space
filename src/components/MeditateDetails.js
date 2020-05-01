@@ -32,11 +32,14 @@ class MeditateDetails extends Component {
     return narrators.map((each) => {
       return (
         <div>
-          <div>
-            <img width="100px" src={each.headshot.url} />
-            <h3>{each.name}</h3>
-            <h3>{each.display_title}</h3>
+
+          <div className="img-name-title">
+            <img className="headshot" src={each.headshot.url} alt="headshotimage"/>
+            <h3 className="eachName">{each.name}</h3>
+            <h3 className="eachTitle" >{each.display_title}</h3>
+
           </div>
+
           <div>
             <h4>{each.short_bio}</h4>
             <h6>{each.bio}</h6>
@@ -53,9 +56,10 @@ class MeditateDetails extends Component {
     return guides.map((each) => {
       return (
         <div>
-          <i className="far fa-circle fa-10x" />
+
           <h4>{each.title}</h4>
           <audio controls src={each.audio.url} />
+
         </div>
       );
     });

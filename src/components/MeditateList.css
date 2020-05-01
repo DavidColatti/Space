@@ -12,33 +12,6 @@ img {
 	border-radius: 10%;
 }
 
-/* .meditateList {
-	display: flex;
-	flex-wrap: wrap;
-	border-radius: 50%;
-} */
-
-/* .meditateElement {
-	width: 20%;
-} */
-
-/* @media screen and (max-width: 815px) {
-	.meditateElement {
-		width: 25%;
-	}
-}
-
-@media screen and (max-width: 720px) {
-	.meditateElement {
-		width: 33%;
-	}
-}
-
-@media screen and (max-width: 620px) {
-	.meditateElement {
-		width: 50%;
-	}
-} */
 
 @media (max-width: 767.98px) { 
 	.card {

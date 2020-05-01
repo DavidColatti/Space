@@ -6,18 +6,17 @@ class Home extends Component {
 	render() {
 		return (
 			<div className="Home">
-				
-
+			
 				<div className="UpperHeader">
 					<img src="spacename.png" alt="space name" />
 
 					<p className="header-text"> Find your peace, get your space.</p>
 
 					<div className="LowerHeader">
-						{/* <a class="myButton"><SignUp /></a> */}
 						<Link to="/Meditate" className="myButton">
 							Get Started
 						</Link>
+
 					</div>
 				</div>
 			</div>
