@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import meditate from "../API/MeditateAPI.json";
+import NavBar from "./NavBar";
 
 class MeditateDetails extends Component {
   state = {
@@ -52,29 +53,9 @@ class MeditateDetails extends Component {
     return guides.map((each) => {
       return (
         <div>
-          <i className="far fa-circle fa-10x"></i>
+          <i className="far fa-circle fa-10x" />
           <h4>{each.title}</h4>
-
-          <div className="buttonControl">
-            <audio controls src={each.audio.url} />
-           {/*} <audio id="player" src="vincent.mp3"></audio>
-			
-			
-			<button onClick="document.getElementById('player').play()">
-              Play
-            </button>
-            <button onClick="document.getElementById('player').pause()">
-              Pause
-            </button>
-            <button onClick="document.getElementById('player').volume += 0.1">
-              Vol +
-            </button>
-            <button onClick="document.getElementById('player').volume -= 0.1">
-              Vol -
-			</button>
-			*/}
-			
-          </div>
+          <audio controls src={each.audio.url} />
         </div>
       );
     });

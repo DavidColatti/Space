@@ -47,7 +47,6 @@ a {
 	text-align: left;
 	margin-left: 140px;
 	margin-top: 250px;
-
 }
 
 .LowerHeader {
@@ -58,12 +57,11 @@ a {
 
 body {
 	background-color: black;
-	font-family: venir Next W05,Avenir,Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-family: venir Next W05, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
 	overflow: scroll;
 	padding: 0;
-	
 }
 
 /* BACKGROUND */
@@ -105,8 +103,8 @@ video {
 	background-color: #dfdfdf;
 }
 .myButton:active {
-	position:relative;
-	top:1px;
+	position: relative;
+	top: 1px;
 }
 
 /* CARD */

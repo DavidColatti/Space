@@ -14,10 +14,10 @@ class NavBar extends Component {
 						<Link to="/Meditate">Meditate</Link>
 					</li>
 					<li>
-						<Link to="/">Scenery</Link>
+						<Link to="/Scenery">Scenery</Link>
 					</li>
 					<li>
-						<Link to="/">Music</Link>
+						<Link to="/Music">Music</Link>
 					</li>
 				</ul>
 			</div>

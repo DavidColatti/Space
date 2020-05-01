@@ -12,6 +12,7 @@ import './App.css';
 import './components/MeditateList.css';
 
 import './components/NavBar.css';
+import './components//Scenery/Scenery.css';
 
 import './components/MeditateDetails.css';
 ReactDOM.render(
