@@ -1,5 +1,16 @@
+/* TRANSPARENT BOX, RENDER */
+.background {
+		margin: 20px;
+		background-color: rgba(0, 0, 0, 0.413);
+		border: 1px ;
+		margin: 5%;
+		font-weight: bold;
+		color: #000000;
+}
+
+
 /******* DISPLAY DETAILS *******/
-/* DIV FOR DOSPLAY DETAIL PROGRAM, TITLE, NARRATORS, GUIDES */
+/* DIV FOR DISPLAY DETAIL PROGRAM, TITLE, NARRATORS, GUIDES */
 
 /* PROGRAM */
  .program {
@@ -10,18 +21,20 @@
 
 .program-title {
 	color: whitesmoke;
-	
 }
 
 /******* GET NARRATOR *******/
 /* DIV FOR HEADSHOT, EACH TITLE, AND EACH NAME */
 
 /* NARRATOR NAME AND IMAGE  */
+.narrator {
+	display:flex;
+	justify-content: center;
+}
+
 .narrator-img-name-title {
 	font-size: 35px;
 	color: whitesmoke;
-	/* flex-direction: column;  ******** figure out why this won't center */
-	
 }
 
 .headshot{
@@ -41,19 +54,15 @@
 }
 
 /* NARRATOR BIO, SHORT BIO AND BIO */
+
 .bio {
 	border: 1px;
 	width: 40% ;
 	text-align: center;
 	margin-left: 20px;
-
 }
 
 
-.narrator {
-	display:flex;
-	justify-content: center;
-}
 
 /******* GET GUIDES *******/
 
