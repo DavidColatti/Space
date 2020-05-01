@@ -2,8 +2,6 @@
 	height: 100vh;
 	width: 100%;
 	overflow: scroll;
-	transition: all .7s;
-	font-size: xx-small;
 }
 
 a {
@@ -40,17 +38,17 @@ img {
 		width: 50%;
 	}
 } */
+
+@media (max-width: 767.98px) { 
+	.card {
+		width:100vw;
+	}
+ }
+
 .card {
-	width: 100vw;
+	width:100vw;
 	max-width: 200px;
 }
-
-@media (min-width: 767.98px) {
-	.card {
-		width: 100vw;
-	}
-}
-
 .card-body {
 	width: 160px;
 	height: 50.5px;
@@ -63,7 +61,7 @@ img {
 
 .card-title {
 	font-size: 14px;
-	color: whitesmoke;
+	color:whitesmoke;
 }
 
 .view {
@@ -73,26 +71,4 @@ img {
 	cursor: default;
 	border-top-left-radius: 5% !important;
 	border-top-right-radius: 5% !important;
-}
-
-.card {
-	background-color: black;
-}
-
-/* CARD */
-
-.card {
-	border-radius: 5% !important;
-	width: 20vw !important;
-	margin-bottom: 10%;
-	margin-right: 10%;
-	background: rgba(0, 0, 0, .3);
-}
-
-.card img {
-	transform: scale(1.2);
-}
-
-.card:hover img {
-	transform: scale(1.5) !important;
 }
