@@ -1,5 +1,26 @@
+
+
+
 body {
 	color: rgb(0, 0, 0);
 	height: 100vh;
 	overflow: scroll;
+}
+
+
+audio {
+	opacity: .5;
+    filter: invert(1);
+    border-radius: 0;
+    font-size: 45px;
+    transform: scale(1.5);
+	padding: 0 !important;
+	clip: rect(0px,60px,200px,0px);
+	overflow: hidden;
+}
+.program {
+/* justify-content: center; */
+display: flex;
+flex-direction: column;
+align-items: center;
 }

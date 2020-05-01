@@ -10,11 +10,11 @@ import './index.css';
 import './components/Home.css';
 import './App.css';
 import './components/MeditateList.css';
-import './components/MeditateDetails.css';
-import './components/Home.css';
+
 import './components/NavBar.css';
 import './components//Scenery/Scenery.css';
 
+import './components/MeditateDetails.css';
 ReactDOM.render(
 	<BrowserRouter>
 		<React.StrictMode>
