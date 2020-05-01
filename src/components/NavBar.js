@@ -5,7 +5,7 @@ class NavBar extends Component {
 	render() {
 		return (
 			<div className="NavBar">
-				<img src="spacename.png" alt="space name" className="nav-img" />
+				<img src="../Images/spacename.png" alt="space name" className="nav-img" />
 				<ul className="nav-list">
 					<li>
 						<Link to="/">Home</Link>
