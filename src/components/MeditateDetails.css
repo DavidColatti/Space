@@ -18,6 +18,7 @@ audio {
 	clip: rect(0px,60px,200px,0px);
 	overflow: hidden;
 }
+
 .program {
 /* justify-content: center; */
 display: flex;
