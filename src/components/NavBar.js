@@ -17,7 +17,7 @@ class NavBar extends Component {
 						<Link to="/Scenery">Scenery</Link>
 					</li>
 					<li>
-						<Link to="/">Music</Link>
+						<Link to="/Music">Music</Link>
 					</li>
 				</ul>
 			</div>

@@ -15,25 +15,6 @@ class MeditateList extends Component {
 		this.state.programs.splice(59, 1);
 		let programsCopy = [ ...this.state.programs ];
 
-		// let columns = programsCopy.map((each) => {
-		//   return (
-		//     <MDBCol md="4">
-		//       <div className="meditateList">
-		//         <Link
-		//           key={each.id}
-		//           className="list-group-item list-group-item-action active"
-		//           to={"/Meditate/" + each.id}
-		//         >
-		//           {each.title}
-		//         </Link>
-		//         <div className="meditateElement">
-		//           <img width="100px" src={each.background_image?.url} alt="icon" />
-		//         </div>
-		//       </div>
-		//     </MDBCol>
-		//   );
-		// });
-
 		let rows = [];
 
 		for (let r = 0; r < programsCopy.length; r++) {
