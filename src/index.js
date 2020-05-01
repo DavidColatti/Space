@@ -12,6 +12,7 @@ import './App.css';
 import './components/MeditateList.css';
 import './components/MeditateDetails.css';
 import './components/Home.css';
+import './components/NavBar.css';
 
 ReactDOM.render(
 	<BrowserRouter>
