@@ -13,6 +13,7 @@ import './components/MeditateList.css';
 import './components/MeditateDetails.css';
 import './components/Home.css';
 import './components/NavBar.css';
+import './components//Scenery/Scenery.css';
 
 ReactDOM.render(
 	<BrowserRouter>

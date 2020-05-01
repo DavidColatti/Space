@@ -74,25 +74,3 @@ img {
 	border-top-left-radius: 5% !important;
 	border-top-right-radius: 5% !important;
 }
-
-.card {
-	background-color: black;
-}
-
-/* CARD */
-
-.card {
-	border-radius: 5% !important;
-	width: 20vw !important;
-	margin-bottom: 10%;
-	margin-right: 10%;
-	background: rgba(0, 0, 0, .3);
-}
-
-.card img {
-	transform: scale(1.2);
-}
-
-.card:hover img {
-	transform: scale(1.5) !important;
-}
