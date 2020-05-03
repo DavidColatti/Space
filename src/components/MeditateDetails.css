@@ -1,23 +1,28 @@
 /* TRANSPARENT BOX, RENDER */
 .background {
-		margin: 20px;
-		background-color: rgba(0, 0, 0, 0.413);
-		border: 1px ;
-		margin: 5%;
-		font-weight: bold;
-		color: #000000;
+	margin: 20px;
+	background-color: rgba(0, 0, 0, 0.413);
+	border: 1px;
+	margin: 5%;
+	font-weight: bold;
+	color: #000000;
 }
-
 
 /******* DISPLAY DETAILS *******/
 /* PROGRAM, TITLE, NARRATORS, GUIDES */
 
 /* PROGRAM */
- .program {
+.program {
+	padding: 1%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}  
+}
+
+.bottom-program {
+	display: flex;
+	margin-top: 5%;
+}
 
 .program-title {
 	color: whitesmoke;
@@ -29,8 +34,9 @@
 
 /* NARRATOR NAME AND IMAGE  */
 .narrator {
-	display:flex;
+	display: flex;
 	justify-content: center;
+	/* margin-top: 15%; */
 }
 
 .narrator-img-name-title {
@@ -38,8 +44,8 @@
 	color: whitesmoke;
 }
 
-.headshot{
-	width:200px;
+.headshot {
+	width: 200px;
 }
 
 .narrator-name {
@@ -58,12 +64,10 @@
 
 .bio {
 	border: 1px;
-	width: 40% ;
+	width: 40%;
 	text-align: center;
 	margin-left: 20px;
 }
-
-
 
 /******* GET GUIDES *******/
 
@@ -75,18 +79,14 @@
 /* AUDIO CONTROLS */
 audio {
 	opacity: .5;
-	color:  rgba(0, 0, 0, .3);
+	color: rgba(0, 0, 0, .3);
 	filter: invert(1);
 }
 
+.program-guide {
+	padding-right: 30px;
+}
 
-
-
-
-
-
-
-
-
-
-
+.program-guide div {
+	margin-top: 10px;
+}

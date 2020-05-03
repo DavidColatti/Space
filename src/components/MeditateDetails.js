@@ -73,9 +73,10 @@ class MeditateDetails extends Component {
 					<h1>{program.title}</h1>
 					<h2>{program.description}</h2>
 				</div>
-
-				<div className="program-narrator"> {this.getNarrators()} </div>
-				<div className="program-guide"> {this.getGuides()} </div>
+				<div className="bottom-program">
+					<div className="program-narrator"> {this.getNarrators()} </div>
+					<div className="program-guide"> {this.getGuides()} </div>
+				</div>
 			</div>
 		);
 	};
