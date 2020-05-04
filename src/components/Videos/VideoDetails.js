@@ -14,7 +14,7 @@ class VideoDetails extends Component {
 
 	displayVideo = () => {
 		return (
-			<iframe
+			<iframe className="iframe-vid"
 				title="video"
 				width="560"
 				height="315"

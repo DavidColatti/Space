@@ -3,7 +3,7 @@ import NavBar from '../NavBar';
 import VideoCard from './VideoCard';
 import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
 
-const apiKey = 'AIzaSyD7UFJDd20jt--CebvqfuvoZW7Tvg_PuqU';
+const apiKey = 'AIzaSyBbYj_H9XZKotGaFHkCPcFw97kxdg-VFUk';
 const channelID = 'UCM7XCXnxtYJkkMN0zf0tsSw';
 var limit = 12;
 var url = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelID}&part=snippet,id&order=date&maxResults=${limit}`;
@@ -21,7 +21,7 @@ class Videos extends Component {
 		fetch(url).then((res) => res.json()).then((res) => {
 			console.log(res);
 			this.setState({
-				videos: res.items
+				videos: res.items || []
 			});
 		});
 	};
@@ -53,12 +53,13 @@ class Videos extends Component {
 				}
 			}
 		}
-		console.log(rows);
+		console.log('hello');
 		return rows;
 	};
 
 	render() {
-		console.log(this.state.videos);
+		//console.log(this.state.videos);
+		console.log(this)
 		return (
 			<div>
 				<NavBar videos={this.state.videos} />

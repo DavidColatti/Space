@@ -13,3 +13,17 @@
 
 }
 
+.scene{
+    position: relative;
+}
+
+.scene-title {
+    position: fixed;
+    z-index: 1000;
+}
+
+.video-img {
+    width: 100%;
+   
+    position: absolute;
+}
