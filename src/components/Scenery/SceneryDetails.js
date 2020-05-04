@@ -36,7 +36,7 @@ class SceneryDetails extends Component {
 					<video autoPlay loop contols="false" width="800px">
 						<source src={scene.video.url} type="video/mp4" />
 					</video>
-					<audio autoPlay loop src={scene.audio.url} />
+					{/* <audio autoPlay loop src={scene.audio.url} /> */}
 				</div>
 			</div>
 		);

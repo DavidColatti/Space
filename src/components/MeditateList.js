@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
 import meditate from '../API/MeditateAPI.json';
 import './MeditateList.css';
 import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';

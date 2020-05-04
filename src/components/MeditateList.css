@@ -12,20 +12,20 @@ img {
 	border-radius: 10%;
 }
 
-
-@media (max-width: 767.98px) { 
+@media (max-width: 767.98px) {
 	.card {
-		width:100vw;
+		width: 100vw;
 	}
- }
+}
 
 .card {
-	width:100vw;
+	width: 100vw;
 	max-width: 200px;
 }
 .card-body {
 	width: 160px;
 	height: 50.5px;
+	padding-top: 10px !important;
 }
 
 .img-fluid {
@@ -34,8 +34,8 @@ img {
 }
 
 .card-title {
-	font-size: 14px;
-	color:whitesmoke;
+	font-size: 12.5px;
+	color: whitesmoke;
 }
 
 .view {
