@@ -6,5 +6,5 @@ A meditation SPA, built with React, using Youtube API & JSON data to render a va
 ![SpaceDemo](SpaceDemo.gif)
 
 ## Built With
-React, HTML5, CSS3, JS, Netlify
+React, HTML5, CSS3, MDBootstrap, JS, Netlify
 
