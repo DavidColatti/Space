@@ -18,7 +18,7 @@ class Scenery extends Component {
 			if (scenesCopy[r + 3]) {
 				if (r % 4 === 0) {
 					rows.push(
-						<MDBRow>
+						<MDBRow key={scenesCopy[r].id}>
 							<MDBCol md="3">
 								<SceneryCard {...scenesCopy[r]} />
 							</MDBCol>
@@ -36,17 +36,17 @@ class Scenery extends Component {
 				}
 			}
 		}
-		console.log(rows);
+		// console.log(rows);
 		return rows;
 	};
 
 	render() {
-		console.log(this.state.scenes);
+		// console.log(this.state.scenes);
 		return (
 			<div>
 				<NavBar />
 				<div className="meditateList">
-					<MDBContainer fluid="true">{this.displayList()}</MDBContainer>
+					<MDBContainer fluid={true}>{this.displayList()}</MDBContainer>
 				</div>
 			</div>
 		);

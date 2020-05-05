@@ -20,7 +20,7 @@ class MeditateList extends Component {
 			if (programsCopy[r + 3]) {
 				if (r % 4 === 0) {
 					rows.push(
-						<MDBRow>
+						<MDBRow key={programsCopy[r].id}>
 							<MDBCol md="3">
 								<Card {...programsCopy[r]} />
 							</MDBCol>
@@ -38,17 +38,15 @@ class MeditateList extends Component {
 				}
 			}
 		}
-		console.log(rows);
 		return rows;
 	};
 
 	render() {
-		console.log(this.state.programs);
 		return (
 			<div>
 				<NavBar />
 				<div className="meditateList">
-					<MDBContainer fluid="true">{this.displayList()}</MDBContainer>
+					<MDBContainer fluid={true}>{this.displayList()}</MDBContainer>
 				</div>
 			</div>
 		);

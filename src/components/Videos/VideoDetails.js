@@ -14,14 +14,15 @@ class VideoDetails extends Component {
 
 	displayVideo = () => {
 		return (
-			<iframe className="iframe-vid"
+			<iframe
+				className="iframe-vid"
 				title="video"
 				width="560"
 				height="315"
 				src={`https://www.youtube.com/embed/${this.state.videoId}`}
-				frameborder="0"
+				frameBorder="0"
 				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen
+				allowFullScreen
 			/>
 		);
 	};

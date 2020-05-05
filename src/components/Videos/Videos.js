@@ -19,7 +19,7 @@ class Videos extends Component {
 
 	getYoutubeData = () => {
 		fetch(url).then((res) => res.json()).then((res) => {
-			console.log(res);
+			// console.log(res);
 			this.setState({
 				videos: res.items || []
 			});
@@ -35,7 +35,7 @@ class Videos extends Component {
 			if (videosCopy[r + 3]) {
 				if (r % 4 === 0) {
 					rows.push(
-						<MDBRow>
+						<MDBRow key={videosCopy[r].id.videoId}>
 							<MDBCol md="3">
 								<VideoCard {...videosCopy[r]} />
 							</MDBCol>
@@ -53,18 +53,18 @@ class Videos extends Component {
 				}
 			}
 		}
-		console.log('hello');
+
 		return rows;
 	};
 
 	render() {
 		//console.log(this.state.videos);
-		console.log(this)
+		// console.log(this)
 		return (
 			<div>
 				<NavBar videos={this.state.videos} />
 				<div className="meditateList">
-					<MDBContainer fluid="true">{this.displayList()}</MDBContainer>
+					<MDBContainer fluid={true}>{this.displayList()}</MDBContainer>
 				</div>
 			</div>
 		);

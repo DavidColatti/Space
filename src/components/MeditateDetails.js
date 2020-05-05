@@ -27,12 +27,11 @@ class MeditateDetails extends Component {
 
 	getNarrators = () => {
 		// NARRATOR FUNCTION- COLLECT HEADSHOT, NAME, AND TITLE
-		let narrators = this.state.program.narrators.splice(0, 1);
-		console.log(narrators);
+		let narrators = this.state.program.narrators.slice(0, 1);
 
 		return narrators.map((each) => {
 			return (
-				<div className="narrator">
+				<div className="narrator" key={each.name}>
 					<div className="narrator-img-name-title">
 						<img className="headshot" src={each.headshot.url} alt="headshotimage" />
 						<h3 className="narrator-name"> {each.name} </h3>
@@ -51,11 +50,11 @@ class MeditateDetails extends Component {
 	getGuides = () => {
 		// GUIDE FUNCTION- TITLE AND AUDIO
 		let guides = this.state.program.guides;
-		console.log(guides);
+		// console.log(guides);
 
 		return guides.map((each) => {
 			return (
-				<div>
+				<div key={each.title}>
 					<h4 className="guide-title"> {each.title} </h4>
 					<audio controls src={each.audio.url} />
 				</div>
