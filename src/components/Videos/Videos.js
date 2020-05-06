@@ -3,7 +3,7 @@ import NavBar from '../NavBar';
 import VideoCard from './VideoCard';
 import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
 
-const apiKey = 'AIzaSyBbYj_H9XZKotGaFHkCPcFw97kxdg-VFUk';
+const apiKey = 'AIzaSyCHF4tnoxG8HF1rfP5Dm8QiPmUoFIT4Ikk';
 const channelID = 'UCM7XCXnxtYJkkMN0zf0tsSw';
 var limit = 12;
 var url = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelID}&part=snippet,id&order=date&maxResults=${limit}`;
