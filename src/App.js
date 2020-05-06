@@ -13,7 +13,7 @@ class App extends Component {
 		return (
 			<div className="App">
 				<video autoPlay loop id="videobackground" contols="false">
-					<source src="../../meadow.mp4" type="video/mp4" />
+					<source src="../../mountain.mov" type="video/mp4" />
 				</video>
 				<Switch>
 					<Route exact path="/" render={(props) => <Home {...props} />} />
