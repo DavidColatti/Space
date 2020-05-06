@@ -65,7 +65,9 @@ a {
 }
 
 .header-text {
-	margin-left: 1.5%;
+	margin-left: 15px;
+	font-size: 15px;
+	margin-top: 10px;
 }
 
 .UpperHeader {
