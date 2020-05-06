@@ -12,7 +12,7 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<video autoPlay loop id="videobackground" contols="false">
+				<video autoPlay loop id="videobackground" muted contols="false">
 					<source src="../../meadow.mp4" type="video/mp4" />
 				</video>
 				<Switch>
